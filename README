@@ -1,0 +1,18 @@
+This is a small project containing an application. The main focus of the application is on encrypting, decrypting and storing users messages.
+
+Main functionalities:
+1) Encrypting a message
+    - Simple algorithm that randomly moves characters of the message up and down a imported or predefined string and therefore turns the message into a unreadable string.
+    - Generates a key which is then used to decrypt the message
+    - Can generate a MASTER KEY which is used to encrypt the previously generated key to ensure complete security. This key is supposed to establish a secure communication
+      between the two parties involved and it is recommended to transfer this key only through offline channels.
+2) Decrypting a message
+    - Reverses the encryption algorithm by using the encrypted string and MASTER KEY.
+3) Generating MASTER KEY
+    - Application is able to generate a MASTER KEY independently and saves it into a local repository of MASTER KEYs.
+4) Importing MASTER KEY
+    - Application is able to import a MASTER KEY into the local repository and the key can be then used to decrypt/encrypt messages.
+5) Key Repository
+    - Application uses a temporary key repository where all the MASTER KEYs are stored.
+
+Any operation in the application can be cancelled by typing "exit".
