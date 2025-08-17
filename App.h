@@ -30,6 +30,7 @@ public:
     static string AppMasterKeyInputProcess();
     static tuple<string, string, string, bool> AppEncryptMessage(vector<string> list);
     static string AppDecryptMessage(vector<string> list);
+    static void AppDatabaseConfig();
 };
 
 
